@@ -1,0 +1,21 @@
+[project]
+name = "Zainnur_Akmal_Al_Giffari_Tugas_2310010408"
+
+[tool.pyside6-project]
+files = [
+  "main.py",
+  "crud.py",
+  "vehicles.py",
+  "vehicles.ui",
+  "officers.py",
+  "officers.ui",
+  "drives.py",
+  "drives.ui",
+  "cycles.py",
+  "cycles.ui",
+  "activities.py",
+  "activities.ui",
+  "queues.py",
+  "queues.ui",
+  "form.ui"
+]

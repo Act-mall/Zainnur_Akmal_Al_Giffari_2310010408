@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SITAMBANG – Data Drives (Perjalanan)</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>360</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="idLabel">
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="EditId">
+      <property name="placeholderText">
+       <string>(kosongkan untuk otomatis)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="officerLabel">
+      <property name="text">
+       <string>Officer ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="EditOfficerId"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="vehicleLabel">
+      <property name="text">
+       <string>Vehicle ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="EditVehicleId"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="activeLabel">
+      <property name="text">
+       <string>Active (0/1)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="ComboActive">
+      <item>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="latLabel">
+      <property name="text">
+       <string>Latitude</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="EditLatitude"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="lngLabel">
+      <property name="text">
+       <string>Longitude</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="EditLongitude"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="dateLabel">
+      <property name="text">
+       <string>Date (YYYY-MM-DD)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="EditDate">
+      <property name="placeholderText">
+       <string>YYYY-MM-DD</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="BtnSimpan">
+      <property name="text">
+       <string>SIMPAN</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="BtnUbah">
+      <property name="text">
+       <string>UBAH</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="BtnHapus">
+      <property name="text">
+       <string>HAPUS</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="lineCari">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>100</y>
+     <width>460</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tblDrives">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>150</y>
+     <width>460</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Officer ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Vehicle ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Active</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Latitude</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Longitude</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Date</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>400</y>
+     <width>820</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="filterDataLabel">
+      <property name="text">
+       <string>Filter Data</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="comboFilter">
+      <item>
+       <property name="text">
+        <string>Semua</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Active</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lblFilter">
+      <property name="text">
+       <string>Active (0/1)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="txtFilter"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="btnCetak">
+      <property name="text">
+       <string>CETAK</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

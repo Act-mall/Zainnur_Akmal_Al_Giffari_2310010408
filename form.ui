@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Main</class>
+ <widget class="QMainWindow" name="Main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SITAMBANG – Halaman Utama</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHALAMAN_UTAMA">
+    <property name="title">
+     <string>HALAMAN UTAMA</string>
+    </property>
+    <addaction name="actionDATA_OFFICERS"/>
+    <addaction name="actionDATA_VEHICLES"/>
+    <addaction name="actionDATA_DRIVES"/>
+    <addaction name="actionDATA_CYCLES"/>
+    <addaction name="actionDATA_ACTIVITIES"/>
+    <addaction name="actionDATA_QUEUES"/>
+   </widget>
+   <addaction name="menuHALAMAN_UTAMA"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionDATA_OFFICERS">
+   <property name="text">
+    <string>DATA OFFICERS</string>
+   </property>
+  </action>
+  <action name="actionDATA_VEHICLES">
+   <property name="text">
+    <string>DATA VEHICLES</string>
+   </property>
+  </action>
+  <action name="actionDATA_DRIVES">
+   <property name="text">
+    <string>DATA DRIVES</string>
+   </property>
+  </action>
+  <action name="actionDATA_CYCLES">
+   <property name="text">
+    <string>DATA CYCLES</string>
+   </property>
+  </action>
+  <action name="actionDATA_ACTIVITIES">
+   <property name="text">
+    <string>DATA ACTIVITIES</string>
+   </property>
+  </action>
+  <action name="actionDATA_QUEUES">
+   <property name="text">
+    <string>DATA QUEUES</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
